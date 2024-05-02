@@ -1,0 +1,11 @@
+//Q1: Install Node.js, TypeScript and VS Code on your computer.
+
+1. Install Node.js
+Download and install from https://nodejs.org/en
+
+2. Install TypeScript
+npm install typescript --save-dev
+npx tsc
+
+3. Install VScode
+Download and install from https://code.visualstudio.com/
