@@ -5,14 +5,14 @@ var current_users = ["hamza", "usman", "Kamran", "shafiq", "yasir"];
 var new_users = ["Hamza", "umair", "kamran", "haroon", "waqas"];
 //• Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
 //• Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
-new_users.forEach(function (newU_check) {
-    //checking if the userName already exist or not
-    var condition = current_users.some(function (current_check) { return current_check.toLowerCase() === newU_check.toLowerCase(); });
-    //printing the message on the basis of username availablity
-    if (condition) {
-        console.log("Sorry ".concat(newU_check, " is already been used, please enter a new username"));
+//checking if newUsers already exists or not
+new_users.forEach(function (new1) {
+    var checking = current_users.some(function (current1) { return new1.toLowerCase() === current1.toLowerCase(); });
+    //condition to show if newly used username already exist or available to register
+    if (checking) {
+        console.log("Hey ".concat(new1, " already exist, try another username"));
     }
     else {
-        console.log("This username ".concat(newU_check, " is availale"));
+        console.log("".concat(new1, " is available to register"));
     }
 });
