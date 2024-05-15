@@ -4,8 +4,8 @@ function describe_city(cityName, country) {
     console.log("".concat(cityName, " is in ").concat(country));
 }
 //calling function with default country value
-describe_city("Karachi");
+describe_city("Karachi"); //output: Karachi is in Pakistan
 //calling function with different values
-describe_city("Muscat", "Oman");
+describe_city("Muscat", "Oman"); // output: Muscat is in Oman
 //again calling function with different values
-describe_city("London", "UK");
+describe_city("London", "UK"); //output: London is in UK
